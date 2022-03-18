@@ -1,0 +1,62 @@
+using System;
+//Name : Mahajan Ajay Manohar
+//Roll no 40
+//Class SYBCA Div A
+public class Animal_info
+{
+ 
+public String An_name,An_food;
+public int An_leg;
+public void display()
+{
+  Console.WriteLine("Enter the Name of Animal:-");
+  An_name=Console.ReadLine();
+  Console.WriteLine("Enter the Name of Food:-");
+  An_food=Console.ReadLine();
+  Console.WriteLine("Enter the Number of Legs:-");
+  An_leg=Convert.ToInt32(Console.ReadLine());
+  }
+  }
+  public class An1 : Animal_info
+  {
+ 
+    public void name()
+    {
+      Console.WriteLine("The Name of Animal is :-" +An_name);
+      
+    
+       
+       
+       }
+  }
+  public class An2 : An1
+{
+  public void leg()
+  {
+    Console.WriteLine("The number of legs on Animal:- "+ An_leg);
+
+  }
+}
+public class An3 : An2
+{
+  public void food()
+  {
+    Console.WriteLine("The food eaten by Animal :-" +An_food);
+    
+  }
+}
+public class multilevel
+{
+  public static void Main(String [] args)
+  {
+    An3 a = new An3();
+    a.display();
+    a.name();
+    a.leg();
+    a.food();
+    
+      
+   
+  }
+ Console.ReadLine();
+}
